@@ -2,7 +2,7 @@
 
 namespace testboard.Migrations
 {
-    public partial class FirstMigration : Migration
+    public partial class First : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

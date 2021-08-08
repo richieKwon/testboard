@@ -13,7 +13,7 @@ namespace testboard.DataContext
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                @"Server=localhost;Database=Test.board.Db;User Id=sa;Password=Complicated1808;");
+                @"Server=localhost;Database=Test.board3.Db;User Id=sa;Password=Complicated1234;");
             
         }
     }

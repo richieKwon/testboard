@@ -9,8 +9,8 @@ using testboard.DataContext;
 namespace testboard.Migrations
 {
     [DbContext(typeof(AspnetNoteDbContext))]
-    [Migration("20210731220258_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20210808180324_First")]
+    partial class First
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
