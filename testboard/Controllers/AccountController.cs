@@ -32,15 +32,15 @@ namespace testboard.Controllers
         [HttpPost]
         public IActionResult Register(User model)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid) //validate if all mandatory files are filled 
             {
                 using (var db = new AspnetNoteDbContext())
-                {
+                { 
                     db.Users.Add(model);
                     db.SaveChanges();
                 }
 
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home"); //redirect to Home controller 
             }
 
             return View();
