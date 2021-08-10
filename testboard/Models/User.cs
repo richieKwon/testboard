@@ -10,16 +10,16 @@ namespace testboard.Models
         [Key] //Primary key
         public int UserNo { get; set; }
         
-        [Required]
+        [Required(ErrorMessage = "UserName is required :)")]
         public string UserName { get; set; }
         
-        [Required]
+        [Required(ErrorMessage = "UserID! required!")]
         public string UserId { get; set; }
         
-        [Required]
+        [Required(ErrorMessage = "Omit!")]
         public string MyProperty { get; set; }
         
-        [Required]
+        [Required(ErrorMessage = "Password is mandatory!")]
         public string UserPassword { get; set; }
     }
-}
+}  
